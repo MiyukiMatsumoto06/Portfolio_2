@@ -1,0 +1,39 @@
+.p-nav {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    margin-right: 2em;
+    font-size: 1.125em;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+
+    &:first-child {
+      text-shadow: 0 0 2px #040000;
+      color: #fff;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      text-shadow: 0 0 2px #040000;
+      color: #fff;
+      transition: 0.2s;
+    }
+  }
+
+  &__stay:hover {
+    opacity: inherit;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-nav {
+    display: none;
+  }
+}

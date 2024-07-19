@@ -1,3 +1,28 @@
-.footer {
-	color: #fff;
+.l-footer {
+  max-width: calc(900px + 10vw);
+  margin: 0 auto;
+  padding: 0 5vw;
+
+  &__logo img {
+    display: block;
+    max-width: 244px;
+    margin: 0 auto 80px;
+  }
+
+  &__copy {
+    text-align: center;
+    font-size: 0.9375em;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .l-footer {
+    &__logo img {
+      width: 60%;
+      margin-bottom: 15vw;
+    }
+  }
 }

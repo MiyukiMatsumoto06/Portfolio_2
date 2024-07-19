@@ -1,0 +1,113 @@
+.p-category {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__container {
+    &--top {
+      align-self: flex-end;
+      width: 50%;
+    }
+
+    &--right {
+      align-self: flex-end;
+    }
+
+    &--left {
+      align-self: flex-start;
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+      margin-top: -190px;
+    }
+
+    &:nth-child(3) {
+      width: 50%;
+      margin-top: -480px;
+    }
+
+    &:nth-child(4) {
+      width: 40%;
+      margin-top: -60px;
+    }
+
+    &:nth-child(5) {
+      width: 50%;
+      margin-top: -455px;
+    }
+  }
+
+  &__zakka img {
+    width: 100%;
+    max-height: 670px;
+    object-fit: cover;
+  }
+
+  &__furniture img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  &__cafe img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+  }
+  &__house img {
+    display: block;
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+  }
+
+  &__text {
+    padding-left: 65px;
+  }
+
+  &__description {
+    font-size: 0.9375em;
+    line-height: 2.3;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-category {
+    &__wrap {
+      flex-flow: wrap;
+      justify-content: center;
+      margin-bottom: 20vw;
+      padding: 0 10vw;
+    }
+
+    &__container {
+      &--top {
+        width: 100%;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        width: 100%;
+        margin-top: 20vw;
+      }
+    }
+
+    &__zakka img,
+    &__furniture img,
+    &__cafe img,
+    &__house img {
+      height: 300px;
+      object-position: left;
+    }
+
+    &__text {
+      padding-left: 45px;
+    }
+  }
+}

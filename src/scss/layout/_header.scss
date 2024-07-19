@@ -1,0 +1,84 @@
+.l-header {
+  padding: 0 7vw 110px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 220px;
+    align-items: center;
+  }
+
+  &__logo img {
+    width: 225px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+  }
+
+  &__content {
+    display: flex;
+    margin-right: 40px;
+  }
+
+  &__icn {
+    width: 35px;
+    margin-right: 15px;
+  }
+
+  &__link {
+    padding-left: 65px;
+    position: relative;
+    font-size: 1.125em;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: #040000;
+      width: 50px;
+      height: 1px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: 0.3s;
+    }
+
+    &:hover::before {
+      width: 30px;
+      left: 20px;
+    }
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .l-header {
+    padding: 0 5vw;
+
+    &__container {
+      height: 100px;
+    }
+
+    &__logo img {
+      width: 150px;
+    }
+
+    &__content {
+      margin-right: calc(5vw + 55px);
+    }
+
+    &__icn {
+      width: 30px;
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+}

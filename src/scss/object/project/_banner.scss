@@ -1,0 +1,33 @@
+.p-banner {
+  margin-bottom: 170px;
+
+  &__list {
+    display: flex;
+    max-width: calc(1300px + 10vw);
+    margin: 0 auto;
+    padding: 0 5vw;
+    gap: 4%;
+  }
+
+  &__item {
+    width: 48%;
+    margin-bottom: 4%;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-banner {
+    margin-bottom: 25vw;
+
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__item {
+      width: 100%;
+      margin: 0 0 4%;
+    }
+  }
+}

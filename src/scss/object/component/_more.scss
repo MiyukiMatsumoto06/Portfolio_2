@@ -1,0 +1,36 @@
+.c-more {
+  position: relative;
+  display: table;
+  margin-top: 1.5em;
+  padding-left: 65px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    margin: auto;
+    background: #040000;
+    content: '';
+    transition: 0.3s;
+  }
+}
+
+.c-more--colimn {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0 0;
+  font-size: 1.375em;
+
+  &::before {
+    right: 0;
+    bottom: auto;
+    width: 1px;
+    height: 30px;
+  }
+}

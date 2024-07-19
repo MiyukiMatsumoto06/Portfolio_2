@@ -1,0 +1,27 @@
+.l-main {
+  &__container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 0 75px 7vw;
+  }
+
+  &__content {
+    margin-top: -75px;
+    padding-top: 75px;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .l-main {
+    &__container {
+      margin: 0 0 10vw 5vw;
+    }
+
+    &__content {
+      padding-top: 15vw;
+      margin-top: -15vw;
+    }
+  }
+}

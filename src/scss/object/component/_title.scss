@@ -1,0 +1,47 @@
+.c-title {
+  position: relative;
+  margin-bottom: 1.3em;
+  padding-left: 65px;
+  font-size: 1.875em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 1px;
+    background: #040000;
+  }
+}
+
+.c-title--noline {
+  margin-bottom: 2em;
+  &::after {
+    content: none;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .c-title {
+    font-size: 1.6em;
+    margin-bottom: 1em;
+    padding-left: 45px;
+
+    &::after {
+      width: 30px;
+    }
+  }
+
+  .c-title--noline {
+    margin-bottom: 1.5em;
+    font-size: 1.875em;
+  }
+}

@@ -1,0 +1,103 @@
+.p-blog {
+  &__inner {
+    max-width: calc(900px + 10vw);
+    margin: 170px auto;
+    padding: 0 5vw;
+  }
+
+  &__top {
+    text-align: center;
+  }
+
+  &__thumb {
+    width: 30%;
+    height: 190px;
+    overflow: hidden;
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    width: 65%;
+    margin-top: 1em;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    font-size: 0.86em;
+    margin-bottom: 1em;
+  }
+
+  &__date {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1;
+    margin-right: 10px;
+  }
+
+  &__label {
+    border: 1px solid;
+    padding: 0 0.5em;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+}
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-blog {
+    &__inner {
+      margin: 25vw auto;
+    }
+
+    &__item {
+      margin-bottom: 10vw;
+    }
+
+    &__thumb {
+      height: 27vw;
+    }
+
+    &__image {
+      height: 27vw;
+    }
+
+    &__content {
+      margin-top: 0;
+      font-size: 0.8em;
+    }
+
+    &__box {
+      flex-flow: wrap;
+    }
+
+    &__date {
+      width: 100%;
+      margin: 0 0 7px;
+    }
+
+    &__title {
+      line-height: 1.5;
+    }
+  }
+}

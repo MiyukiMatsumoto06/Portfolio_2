@@ -12,6 +12,9 @@
 // Layout
 // ==========================================================================*/
 
+@use 'layout/_wrap';
+@use 'layout/_header';
+@use 'layout/_main';
 @use 'layout/_footer';
 
 /*// ==========================================================================
@@ -22,14 +25,23 @@
 // Component
 // -----------------------------------------------------------------*/
 
-@use 'object/component/_btn';
-
+@use 'object/component/_menuBtn';
+@use 'object/component/_title';
+@use 'object/component/_more';
 
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
 
-@use 'object/project/_home';
+@use 'object/project/_nav';
+@use 'object/project/_menu';
+@use 'object/project/_scroll';
+@use 'object/project/_carousel';
+@use 'object/project/_news';
+@use 'object/project/_banner';
+@use 'object/project/_category';
+@use 'object/project/_blog';
+@use 'object/project/_shopList';
 
 /*// -----------------------------------------------------------------
 // Utility
