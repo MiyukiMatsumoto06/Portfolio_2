@@ -29,3 +29,10 @@
     height: 100%;
   }
 }
+
+// SP表示　768px以下
+@media screen and (max-width: 768px) {
+  .p-scroll {
+    height: 115px;
+  }
+}

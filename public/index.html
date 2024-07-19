@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 
 <title>TOP</title>
-<link href="assets/stylesheets/bundlefacc8717f79728ba1646.css" rel="stylesheet"></head>
+<link href="assets/stylesheets/bundle0f66dd033eb5ecbedc81.css" rel="stylesheet"></head>
 <body>
 
 <!-- .l-wrap -->
@@ -110,24 +110,12 @@
 
     <div class="p-carousel">
       <ul class="p-carousel__list">
-        <li class="p-carousel__item">
-          <a href="#" class="p-carousel__link"><div class="p-carousel__image"></div></a>
-        </li>
-        <li class="p-carousel__item">
-          <a href="#" class="p-carousel__link"><div class="p-carousel__image"></div></a>
-        </li>
-        <li class="p-carousel__item">
-          <a href="#" class="p-carousel__link"><div class="p-carousel__image"></div></a>
-        </li>
+        <li class="p-carousel__item p-carousel__first"></li>
+        <li class="p-carousel__item p-carousel__second"></li>
+        <li class="p-carousel__item p-carousel__third"></li>
       </ul>
     </div>
   </div>
-  <!-- <li class="p-carousel__item">
-    <a href="#"><img class="p-carousel__pc u-hidden-sp" src="assets/images/carousel_01.png" alt="カフェ" /> <img class="p-carousel__sp u-hidden-pc" src="assets/images/carousel_03.png" alt="カフェ" /></a>
-  </li>
-  <li class="p-carousel__item">
-    <a href="#"><img class="p-carousel__pc u-hidden-sp" src="assets/images/carousel_02.png" alt="カフェ" /> <img class="p-carousel__sp u-hidden-pc" src="assets/images/carousel_03.png" alt="カフェ" /></a>
-  </li> -->
 
   <div class="l-main__content">
     <!-- .p-news -->
@@ -142,7 +130,7 @@
     </article>
 
     <!-- .p-banner -->
-    <div class="p-banner">
+    <div class="p-banner _scrollSlideUp _scrollFadeIn">
       <ul class="p-banner__list">
         <li class="p-banner__item">
           <a href="#"><img src="assets/images/bnr_01.png" alt="家づくり" /></a>
@@ -158,7 +146,7 @@
       <div class="p-category__wrap">
         <!-- ABOUT -->
         <div class="p-category__container p-category__container--top u-pr-10">
-          <div class="p-category__box">
+          <div class="p-category__box _scrollSlideUp _scrollFadeIn">
             <h2 class="c-title">ABOUT</h2>
             <div class="p-category__content">
               <p class="p-category__text p-category__description">
@@ -387,19 +375,24 @@
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!-- <script>
+<script>
  $(document).ready(function(){
       $('.p-carousel__list').slick({
+        fade:true,
+        autoplay: true,
+        autoplaySpeed: 3500,
+        speed:2500,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        dots: true,
+
+
       });
     });
-  </script> -->
-
-<!-- <script>
+  </script>
+<!--
+<script>
   $(document).ready(function(){
   $('.p-carousel__list').slick({
     arrows: false,
@@ -427,7 +420,7 @@
 	});
 </script> -->
 
-<script type="text/javascript" src="assets/javascripts/bundlefacc8717f79728ba1646.js"></script></body>
+<script type="text/javascript" src="assets/javascripts/bundle0f66dd033eb5ecbedc81.js"></script></body>
 </html>
 
 
