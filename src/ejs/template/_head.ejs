@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8" />
-<meta name="description" content="<%= description %>" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" href="./assets/images/fav.png" />
-<!--facebook用-->
-<meta property="og:title" content="<%= title %>" />
-<meta property="og:description" content="<%= description %>" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" /><!--絶対パスで記述-->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="<%= title %>" />
-<meta property="og:locale" content="ja_JP" />
-<!--twitter用-->
-<meta name="twitter:card" content="summary_large_image" /><!-- summary summary_large_image photo gallery appから選ぶ -->
-<!-- <meta name="twitter:site" content="" /> --><!--twitterがあれば記述-->
-<meta name="twitter:title" content="<%= title %>" />
-<meta name="twitter:url" content="" />
-<meta name="twitter:description" content="<%= description %>" />
-<meta name="twitter:image" content="" /><!--絶対パスで記述-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="<%= description %>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="./assets/images/fav.ico" />
+    <!--facebook用-->
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:url" content="https://miyukimatsumoto06.github.io/portfolio_2/public/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1562376552-0d160a2f238d?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <!--絶対パスで記述-->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="<%= title %>" />
+    <meta property="og:locale" content="ja_JP" />
+    <!--twitter用-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- summary summary_large_image photo gallery appから選ぶ -->
+    <!-- <meta name="twitter:site" content="" /> -->
+    <!--twitterがあれば記述-->
+    <meta name="twitter:title" content="<%= title %>" />
+    <meta name="twitter:url" content="https://miyukimatsumoto06.github.io/portfolio_2/public/" />
+    <meta name="twitter:description" content="<%= description %>" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1562376552-0d160a2f238d?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <!--絶対パスで記述-->
 
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
 
-<!-- carousel -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
 
-<title><%= title %></title>
-</head>
-<body>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <!-- .l-wrap -->
+    <div class="l-wrap">
+      <!-- .l-header -->
+      <header class="l-header">
+        <div class="l-header__container">
+          <h1 class="l-header__logo">
+            <a href="#"><img src="assets/images/logo.png" alt="ロゴ" /></a>
+          </h1>
+          <div class="l-header__box">
+            <ul class="l-header__content">
+              <li class="l-header__icn">
+                <a href="#"><img src="assets/images/icn_hdr_01.svg" alt="facebook" /></a>
+              </li>
+              <li class="l-header__icn">
+                <a href="#"><img src="assets/images/icn_hdr_02.svg" alt="instagram" /></a>
+              </li>
+            </ul>
+            <a href="#" target="_blank" class="l-header__link u-opacity-1">Lilium HOUSE</a>
+          </div>
+        </div>
 
-<!-- .l-wrap -->
-<div class="l-wrap">
-
-<!-- .l-header -->
-<header class="l-header">
-  <div class="l-header__container">
-    <h1 class="l-header__logo">
-      <a href="#"><img src="assets/images/logo.png" alt="ロゴ"></a>
-    </h1>
-    <div class="l-header__box">
-      <ul class="l-header__content">
-        <li class="l-header__icn">
-          <a href="#"><img src="assets/images/icn_hdr_01.svg" alt="facebook"></a>
-        </li>
-        <li class="l-header__icn">
-          <a href="#"><img src="assets/images/icn_hdr_02.svg" alt="instagram"></a>
-        </li>
-      </ul>
-      <a href="#" target="_blank" class="l-header__link">Lilium HOUSE</a>
+        <!-- .p-nav -->
+        <nav class="p-nav">
+          <ul class="p-nav__list">
+            <li class="p-nav__item"><a href="#" class="p-nav__stay">TOP</a></li>
+            <li class="p-nav__item"><a href="#">ZAKKA</a></li>
+            <li class="p-nav__item"><a href="#">FURNITURE</a></li>
+            <li class="p-nav__item"><a href="#">CAFE</a></li>
+            <li class="p-nav__item"><a href="#">WORK SHOP</a></li>
+            <li class="p-nav__item"><a href="#">ACCESS</a></li>
+            <li class="p-nav__item"><a href="#">BLOG</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
-  </div>
-
-  <!-- .p-nav -->
-  <nav class="p-nav">
-<ul class="p-nav__list">
-  <li class="p-nav__item"><a href="#" class="p-nav__stay">TOP</a></li>
-  <li class="p-nav__item"><a href="#">ZAKKA</a></li>
-  <li class="p-nav__item"><a href="#">FURNITURE</a></li>
-  <li class="p-nav__item"><a href="#">CAFE</a></li>
-  <li class="p-nav__item"><a href="#">WORK SHOP</a></li>
-  <li class="p-nav__item"><a href="#">ACCESS</a></li>
-  <li class="p-nav__item"><a href="#">BLOG</a></li>
-</ul>
-  </nav>
-
-
-</header>
+  </body>
+</html>

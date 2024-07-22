@@ -24,6 +24,10 @@
   }
 }
 
+.u-opacity-1 {
+  opacity: 1 !important;
+}
+
 .u-mt-130 {
   margin-top: 130px;
 }
@@ -31,27 +35,5 @@
 @media screen and (max-width: 768px) {
   .u-mt-40 {
     margin-top: 40px !important;
-  }
-}
-
-.u-pr-10 {
-  padding-right: 10vw !important;
-}
-
-// SP表示　768px以下
-@media screen and (max-width: 768px) {
-  .u-pr-10 {
-    padding-right: 0 !important;
-  }
-}
-
-.u-pl-10 {
-  padding-left: 10vw !important;
-}
-
-// SP表示　768px以下
-@media screen and (max-width: 768px) {
-  .u-pl-10 {
-    padding-left: 0 !important;
   }
 }

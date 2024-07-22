@@ -16,12 +16,16 @@
   }
 
   &__image {
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
     transform: scale(1);
     transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__item {
@@ -60,6 +64,35 @@
     font-size: 1.3em;
     font-weight: 700;
     margin-bottom: 0.5em;
+  }
+
+  &__more {
+    display: table;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.375em;
+    line-height: 1;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 1px;
+      height: 30px;
+      margin: auto;
+      background: #040000;
+      content: '';
+      transition: 0.3s;
+    }
+
+    &:hover::before {
+      top: 15px;
+      height: 15px;
+    }
   }
 }
 

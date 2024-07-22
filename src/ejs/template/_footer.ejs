@@ -1,7 +1,7 @@
 <!-- .l-footer -->
 <footer class="l-footer">
-  <div class="l-footer__logo">
-    <a href="#"><img src="assets/images/logo.png" alt="ロゴ"></a>
+  <div class="l-footer__logo _scrollFadeIn _scrollSlideIn">
+    <img src="assets/images/logo.png" alt="ロゴ">
   </div>
 
   <!-- .p-shopList -->
@@ -53,11 +53,11 @@
     shopLi.classList.add("p-shopList__item");
 
     shopLi.innerHTML =`
-    <h4 class="p-shopList__place">${item.場所}</h4>
-    <div class="p-shopList__img">
+    <h4 class="p-shopList__place  _scrollFadeIn _scrollSlideRight">${item.場所}</h4>
+    <div class="p-shopList__img _scrollFadeIn _scrollSlideIn">
       <img src="${item.店内}" alt="店内">
     </div>
-    <div class="p-shopList__box">
+    <div class="p-shopList__box _scrollFadeIn _scrollSlideOn">
     <p class="p-shopList__about">${item.住所}<br>${item.電話番号}<br>${item.定休日}<br>${item.営業時間}</p>
     <a href="${item.Instagram}" class = "p-shopList__icn"><img src="assets/images/icn_ftr.svg" alt="Instagram"></a>
     </div>
@@ -66,11 +66,8 @@
   });
 </script>
 
-
-
   <p class="l-footer__copy">&copy;Lilium</p>
 </footer>
-
 </div><!-- l-wrap -->
 
 <!-- JS -->
@@ -87,39 +84,9 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-
-
       });
     });
   </script>
-<!--
-<script>
-  $(document).ready(function(){
-  $('.p-carousel__list').slick({
-    arrows: false,
-    autoplay: true,
-    adaptiveHeight: true,
-    centerMode: true,
-    centerPadding: '12%',
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          centerPadding: '8%'
-        }
-      }
-    ]
-  });
-});
-</script> -->
-
-<!-- <script>
-	$('.p-carousel__list').slick({
-		autoplay: true,
-		dots: true,
-	});
-</script> -->
 
 </body>
 </html>

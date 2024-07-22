@@ -10,10 +10,10 @@ $(() => {
 
   // メニュー表示
   const menu = $('.p-menu')
-  const showMenuPosition = 100
+  const showMenInosition = 100
 
   $(window).on('scroll', () => {
-    if ($(window).scrollTop() > showMenuPosition) {
+    if ($(window).scrollTop() > showMenInosition) {
       menu.addClass('is-active')
     } else {
       menu.removeClass('is-active')
@@ -46,6 +46,51 @@ $(() => {
     })
   }
 
+  // スライドイン
+  const checkScrollSlideIn = (scrollBottom) => {
+    const scrollSlideIn = $('._scrollSlideIn')
+
+    scrollSlideIn.each((index, element) => {
+      const isActive = $(element).offset().top < scrollBottom
+
+      if (isActive) {
+        $(element).addClass('_isActiveSlideIn')
+      } else {
+        $(element).removeClass('_isActiveSlideIn')
+      }
+    })
+  }
+
+  // スライドオン
+  const checkScrollSlideOn = (scrollBottom) => {
+    const scrollSlideOn = $('._scrollSlideOn')
+
+    scrollSlideOn.each((index, element) => {
+      const isActive = $(element).offset().top < scrollBottom
+
+      if (isActive) {
+        $(element).addClass('_isActiveSlideOn')
+      } else {
+        $(element).removeClass('_isActiveSlideOn')
+      }
+    })
+  }
+
+  // スライドレフト
+  const checkScrollSlideRight = (scrollBottom) => {
+    const scrollSlideRight = $('._scrollSlideRight')
+
+    scrollSlideRight.each((index, element) => {
+      const isActive = $(element).offset().top < scrollBottom
+
+      if (isActive) {
+        $(element).addClass('_isActiveSlideRight')
+      } else {
+        $(element).removeClass('_isActiveSlideRight')
+      }
+    })
+  }
+
   // フェードイン
   const checkScrollFadeIn = (scrollBottom) => {
     const scrollFadeIn = $('._scrollFadeIn')
@@ -68,6 +113,9 @@ $(() => {
     const scrollBottom = scrollTop + windowHeight
 
     checkScrollSlideUp(scrollBottom)
+    checkScrollSlideIn(scrollBottom)
+    checkScrollSlideOn(scrollBottom)
+    checkScrollSlideRight(scrollBottom)
     checkScrollFadeIn(scrollBottom)
   })
 })

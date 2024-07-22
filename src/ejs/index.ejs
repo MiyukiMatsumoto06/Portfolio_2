@@ -1,4 +1,4 @@
-<% var title = "TOP"; var description = "トップのdescription"; %>
+<% var title = "Lilium"; var description = "Liliumはカフェ・雑貨ショップです。「わたしらしさを見つける場所」をコンセプトに、おしゃれで上質なライフスタイルを提案するお店です。ワークショップや勉強会など、さまざまなイベントも企画しておりますので、お近くにお越しの際はぜひお立ち寄りください。"; %>
 <!-- .l-header -->
 <% include src/ejs/template/_head %>
 
@@ -51,7 +51,7 @@
     </article>
 
     <!-- .p-banner -->
-    <div class="p-banner _scrollSlideUp _scrollFadeIn">
+    <div class="p-banner _scrollFadeIn _scrollSlideUp">
       <ul class="p-banner__list">
         <li class="p-banner__item">
           <a href="#"><img src="assets/images/bnr_01.png" alt="家づくり" /></a>
@@ -66,15 +66,15 @@
     <section class="p-category">
       <div class="p-category__wrap">
         <!-- ABOUT -->
-        <div class="p-category__container p-category__container--top u-pr-10">
-          <div class="p-category__box _scrollSlideUp _scrollFadeIn">
+        <div class="p-category__container _scrollFadeIn _scrollSlideIn">
+          <div class="p-category__box">
             <h2 class="c-title">ABOUT</h2>
             <div class="p-category__content">
               <p class="p-category__text p-category__description">
-                Liliumは、心と体を癒す空間を提供します。<br />
-                専門のバリスタが淹れる香り高いコーヒーや、軽食をお楽しみいただけます。<br />
-                また、様々な雑貨も販売しており、訪れるたびに新しい発見があります。<br />
-                さらに、住まいの提案として、インテリアコンサルティング等も提供しています。<br />
+                Liliumは、心と体を癒す空間を提供しています。<br />
+                専門のバリスタが淹れるコーヒーや、軽食をお楽しみいただけます。<br />
+                また、様々な雑貨も販売しており、訪れる度に新しい発見があります。<br />
+                さらに、住まいのご提案もさせていただいています。<br />
                 Liliumで特別なひとときをお過ごしください。<br />
                 スタッフ一同、心よりお待ちしております。
               </p>
@@ -83,66 +83,54 @@
         </div>
 
         <!-- ZAKKA -->
-        <div class="p-category__container p-category__container--left u-pl-10">
-          <div class="p-category__content">
-            <div class="p-category__zakka">
-              <img src="assets/images/category_01.jpg" alt="ABOUT" />
-            </div>
+        <div class="p-category__container _scrollFadeIn _scrollSlideIn">
+          <div class="p-category__content p-category__left">
+            <div class="p-category__zakka"></div>
             <h2 class="c-title u-mt-130 u-mt-40">ZAKKA</h2>
             <div class="p-category__text">
               <p class="p-category__description">おしゃれで使いやすい雑貨を取り揃え、暮らしを豊かにします。</p>
-              <a href="#" class="c-more">more</a>
+              <a href="#" class="c-more u-opacity-1">more</a>
             </div>
           </div>
         </div>
 
         <!-- FURNITURE -->
-        <div class="p-category__container p-category__container--right">
+        <div class="p-category__container _scrollFadeIn _scrollSlideIn">
           <div class="p-category__content">
-            <div class="p-category__furniture">
-              <img src="assets/images/category_02.png" alt="FURNITURE" />
-            </div>
+            <div class="p-category__furniture"></div>
             <h2 class="c-title u-mt-130 u-mt-40">FURNITURE</h2>
             <div class="p-category__text">
               <p class="p-category__description">スタイリッシュな家具を豊富に取り揃えています。</p>
-              <a href="#" class="c-more">more</a>
+              <a href="#" class="c-more u-opacity-1">more</a>
             </div>
           </div>
         </div>
 
         <!-- CAFE -->
-        <div class="p-category__container p-category__container--left">
-          <div class="p-category__container">
-            <div class="p-category__content">
-              <div class="p-category__cafe">
-                <img src="assets/images/category_03.jpg" alt="CAFE" />
-              </div>
-              <div class="u-pl-10">
-                <h2 class="c-title u-mt-130 u-mt-40">CAFE</h2>
-                <div class="p-category__text">
-                  <p class="p-category__description">心安らぐカフェ。</p>
-                  <a href="#" class="c-more">more</a>
-                </div>
+        <div class="p-category__container _scrollFadeIn _scrollSlideIn">
+          <div class="p-category__content">
+            <div class="p-category__cafe"></div>
+            <div class="u-p-10">
+              <h2 class="c-title u-mt-130 u-mt-40">CAFE</h2>
+              <div class="p-category__text">
+                <p class="p-category__description">心安らぐカフェ。</p>
+                <a href="#" class="c-more u-opacity-1">more</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- HOUSE -->
-        <div class="p-category__container p-category__container--right u-pr-10">
-          <div class="p-category__container">
-            <div class="p-category__content">
-              <div class="p-category__house">
-                <img src="assets/images/category_04.png" alt="HOUSE" />
-              </div>
-              <h2 class="c-title u-mt-130 u-mt-40">HOUSE</h2>
-              <div class="p-category__text">
-                <p class="p-category__description">
-                  洗練されたインテリアと厳選された雑貨で彩る日々。<br />
-                  そんな理想を実現するLiliumは、あなただけの為のオーダーメイド住宅を提供します。
-                </p>
-                <a href="#" class="c-more">more</a>
-              </div>
+        <div class="p-category__container _scrollFadeIn _scrollSlideIn">
+          <div class="p-category__content p-category__right">
+            <div class="p-category__house"></div>
+            <h2 class="c-title u-mt-130 u-mt-40">HOUSE</h2>
+            <div class="p-category__text">
+              <p class="p-category__description">
+                洗練されたインテリアと厳選された雑貨で彩る日々。<br />
+                そんな理想を実現するLiliumは、あなただけの為のオーダーメイド住宅を提供します。
+              </p>
+              <a href="#" class="c-more u-opacity-1">more</a>
             </div>
           </div>
         </div>
@@ -153,7 +141,7 @@
     <section class="p-blog">
       <div class="p-blog__inner">
         <div class="p-blog__top">
-          <h2 class="c-title c-title--noline">BLOG</h2>
+          <h2 class="c-title c-title--noline _scrollFadeIn _scrollSlideIn">BLOG</h2>
         </div>
         <ul class="p-blog__list"></ul>
 
@@ -190,28 +178,29 @@
           blogData.forEach((item) => {
             const blogItem = document.createElement('li')
             blogItem.className = 'p-blog__item'
+            blogItem.classList.add('_scrollFadeIn', '_scrollSlideIn')
 
             blogItem.innerHTML = `
-<div class="p-blog__thumb">
-             <div class="p-blog__image" style="background-image: url('${item.image}');">
-        </div>
-        </div>
-            <div class="p-blog__content">
-              <div class="p-blog__box">
-                <p class="p-blog__date">${item.date}</p>
-                <p class="p-blog__label">${item.category}</p>
-                <p class="p-blog__label">${item.shop}</p>
+              <div class="p-blog__thumb">
+                <div class="p-blog__image" style="background-image: url('${item.image}');"></div>
+              </div>
+              <div class="p-blog__content">
+                <div class="p-blog__box">
+                  <p class="p-blog__date">${item.date}</p>
+                  <p class="p-blog__label">${item.category}</p>
+                  <p class="p-blog__label">${item.shop}</p>
                 </div>
                 <a href="#"><h3 class="p-blog__title">${item.title}</h3></a>
                 <p class="p-blog__text">${item.text}</p>
-            </div>
+              </div>
             `
 
             blogList.appendChild(blogItem)
           })
         </script>
-
-        <a href="#" class="c-more c-more--colimn">more</a>
+        <div class="_scrollFadeIn _scrollSlideOn">
+          <a href="#" class="p-blog__more u-opacity-1">more</a>
+        </div>
       </div>
     </section>
   </div>
@@ -219,7 +208,3 @@
 
 <!-- .l-footer -->
 <% include src/ejs/template/_footer %>
-
-<!-- <div class="p-blog__image">
-  <img src="${item.image}" alt="${item.alt}" />
-</div> -->

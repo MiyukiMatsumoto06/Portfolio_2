@@ -16,17 +16,7 @@
     height: 0;
     background: #040000;
     content: '';
-    animation: scroll_down 3s ease-in-out 0s infinite;
-  }
-}
-
-// スクロールダウン
-@keyframes scroll_down {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
+    animation: scroll_down 4s ease-in-out infinite;
   }
 }
 
@@ -34,5 +24,25 @@
 @media screen and (max-width: 768px) {
   .p-scroll {
     height: 115px;
+  }
+}
+
+// スクロールダウン
+@keyframes scroll_down {
+  0% {
+    height: 0;
+    top: 0;
+  }
+  50% {
+    height: 100%;
+    top: 0;
+  }
+  75% {
+    height: 0;
+    top: 100%;
+  }
+  100% {
+    height: 0;
+    top: 100%;
   }
 }

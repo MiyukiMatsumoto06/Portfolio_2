@@ -105,6 +105,7 @@
   content: 'CLOSE';
 }
 
+// SP表示　768px以下
 @media screen and (max-width: 768px) {
   .c-menuBtn.is-active .c-menuBtn__bar:nth-of-type(1) {
     top: 2px;

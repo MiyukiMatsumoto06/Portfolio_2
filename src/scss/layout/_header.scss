@@ -8,6 +8,10 @@
     align-items: center;
   }
 
+  &__logo a {
+    transition: 0.3s;
+  }
+
   &__logo img {
     width: 225px;
   }

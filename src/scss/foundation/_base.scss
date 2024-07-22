@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-// html {
-//   font-size: 62.5%;
-// }
-
 img {
   width: 100%;
   vertical-align: middle;
@@ -19,7 +15,7 @@ a {
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 // デバッグ用
@@ -35,3 +31,7 @@ a:hover {
 // body * * * * {
 //   outline: 1px dotted rgba(0,0,255,0.2) !important;
 // } /* blue */
+
+// html {
+//   font-size: 62.5%;
+// }

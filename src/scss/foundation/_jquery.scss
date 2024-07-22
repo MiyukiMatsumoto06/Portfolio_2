@@ -1,13 +1,45 @@
+// スライドアップ
 ._scrollSlideUp {
-  transform: translate(0, 3rem);
+  transform: translate(0, 10px);
+}
+
+._isActiveSlideUp {
+  transform: translate(0, 0) scale(1);
+  transition-delay: 0.5s;
+}
+
+// スライドイン
+._scrollSlideIn {
+  transform: scale(1.1);
+  transition-delay: 0.5s;
+}
+
+._isActiveSlideIn {
+  transform: translate(0, 0) scale(1);
+  transition-delay: 0.5s;
+}
+
+// スライドオン
+._scrollSlideOn {
+  transition-delay: 0.5s;
+}
+
+._isActiveSlideOn {
+  transform: translate(0, 0) scale(1);
+}
+
+// スライドライト
+._scrollSlideRight {
+  transform: translate(-3rem, 0);
   transition-property: all;
   transition-duration: 1s;
 }
 
-._isActiveSlideUp {
+._isActiveSlideRight {
   transform: translate(0, 0);
 }
 
+// フェードイン
 ._scrollFadeIn {
   opacity: 0;
   transition-property: all;

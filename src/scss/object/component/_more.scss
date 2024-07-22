@@ -25,17 +25,3 @@
     width: 20px;
   }
 }
-
-.c-more--colimn {
-  margin: 0 auto;
-  text-align: center;
-  padding: 40px 0 0;
-  font-size: 1.375em;
-
-  &::before {
-    right: 0;
-    bottom: auto;
-    width: 1px;
-    height: 30px;
-  }
-}
