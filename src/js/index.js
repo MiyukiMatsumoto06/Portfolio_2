@@ -31,6 +31,16 @@ $(() => {
     menuItem.toggleClass('is-active')
   })
 
+  // メニューリンク
+  const menuLink = $('.p-menu__link')
+
+  menuLink.click(function () {
+    $(this).toggleClass('is-active')
+    menuBtn.toggleClass('is-active')
+    menuBox.toggleClass('is-active')
+    menuItem.toggleClass('is-active')
+  })
+
   // スライドアップ
   const checkScrollSlideUp = (scrollBottom) => {
     const scrollSlideUp = $('._scrollSlideUp')
